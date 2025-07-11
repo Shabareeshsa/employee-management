@@ -1,0 +1,76 @@
+body {
+  margin: 0; font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f4f4fa;
+}
+
+.login-bg, .dashboard-bg {
+  min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center;
+  background: linear-gradient(120deg, #7563e6 0%, #b993e6 100%);
+}
+
+.login-box {
+  background: #fff; padding: 2.5rem 2rem; border-radius: 14px; box-shadow: 0 8px 36px #7263e61a;
+  display: flex; flex-direction: column; gap: 1.2rem; align-items: center;
+  min-width: 320px;
+}
+
+.login-btn {
+  background: #7563e6; color: #fff; border: none; padding: 0.6rem 2rem; border-radius: 8px; font-size: 1rem; cursor: pointer;
+}
+.login-btn:hover { background: #5646a9; }
+
+.error-msg { color: #e95353; font-size: 0.95rem; }
+
+.dashboard-header {
+  width: 100vw; display: flex; align-items: center; justify-content: space-between;
+  padding: 1.2rem 3rem 1rem 2rem;
+  background: #fff; box-shadow: 0 1px 8px #0001;
+}
+.logo {
+  font-size: 1.7rem; font-weight: bold; color: #7563e6;
+  letter-spacing: 1px;
+}
+.logout-btn {
+  background: #f4f4fa; color: #7563e6; border: 1px solid #7563e6; padding: 0.5rem 1.2rem; border-radius: 8px; font-weight: 500;
+}
+.logout-btn:hover { background: #7563e6; color: #fff; }
+
+.dashboard-main {
+  margin: 0 auto; padding: 2.5rem 0;
+  width: 100vw; display: flex; justify-content: center;
+}
+
+.employee-section {
+  background: #fff; border-radius: 16px; box-shadow: 0 6px 30px #7563e61b;
+  padding: 2.5rem 2.2rem; min-width: 540px;
+  display: flex; flex-direction: column; gap: 1.5rem;
+}
+
+.employee-form {
+  display: flex; gap: 1rem; margin-bottom: 0.5rem;
+}
+.employee-form input {
+  background: #f3f3fa; border: 1px solid #d3d3e9; padding: 0.5rem 1rem; border-radius: 7px; font-size: 1rem;
+}
+.employee-form button {
+  background: #7563e6; color: #fff; border: none; border-radius: 7px; padding: 0.5rem 1.2rem;
+  font-size: 1rem; font-weight: 500; margin-left: 0.5rem;
+}
+.cancel-btn { background: #eaeaea; color: #7563e6; }
+.cancel-btn:hover { background: #f7e1e1; }
+
+.employee-table { width: 100%; border-collapse: collapse; margin-top: 0.5rem; }
+.employee-table th, .employee-table td { padding: 0.85rem 1.1rem; border-bottom: 1px solid #f2f1fa; }
+.employee-table th { background: #f7f5fc; color: #7563e6; font-weight: bold; }
+.employee-table tr:hover { background: #f7f5fc; }
+
+.edit-btn, .delete-btn {
+  background: none; border: none; color: #7563e6; font-size: 1rem; font-weight: 500; margin-right: 0.6rem; cursor: pointer;
+}
+.delete-btn { color: #e95353; }
+.no-employee { color: #b2a4d4; margin: 1.2rem; }
+
+@media (max-width: 680px) {
+  .employee-section { min-width: 98vw; padding: 1.5rem 0.4rem; }
+  .dashboard-header { padding: 1.2rem 1rem; }
+}

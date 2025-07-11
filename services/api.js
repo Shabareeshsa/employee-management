@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const API = axios.create({
-  baseURL: '/api/v1', // Change this if your backend is different
+  baseURL: 'https://backend-dngjezaug9b2gqa2.centralindia-01.azurewebsites.net/api/v1', // Change this if your backend is different
 });
 
 export const login = async (username, password) => {
